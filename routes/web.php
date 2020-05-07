@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\User;
+use App\Permission\Models\Role;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,50 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Esto es para crear las Pruebas sin controladores inicialmente
+Route::get('/test', function () 
+{
+    //Creamos una pruebita
+    //return 'Hola!';
+    //vamos a http://127.0.0.1:8000/test y deberia retornar Hola! 
+
+    //Ahora si creamos 3 Roles
+    /*
+    return  Role::create([
+        'name' => 'Admin',
+        'slug' => 'admin',
+        'description' => 'Administrator',
+        'full-access' => 'yes'
+    ]);
+    */
+    
+    /*
+    return   Role::create([
+        'name' => 'Guest',
+        'slug' => 'guest',
+        'description' => 'guest',
+        'full-access' => 'no'
+    ]);
+    */
+   
+    /*
+    return   Role::create([
+        'name' => 'test',
+        'slug' => 'test',
+        'description' => 'test',
+        'full-access' => 'no'
+    ]);
+    */
+
+    $user = User::find(1);
+
+    //$user->roles()->attach([1,3]);
+    //$user->roles()->detach([3]); 
+    //sync es algo nuevo de Laravel 7 que soluciona de usar attach y detach
+    $user->roles()->sync([1,2]);
+
+    return $user->roles;
+    
+    
+});
