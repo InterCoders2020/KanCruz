@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\User;
 use App\Permission\Models\Role;
+use App\Permission\Models\Permission;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,7 +58,7 @@ Route::get('/test', function ()
         'full-access' => 'no'
     ]);
     */
-
+    /*
     $user = User::find(1);
 
     //$user->roles()->attach([1,3]);
@@ -66,6 +67,23 @@ Route::get('/test', function ()
     $user->roles()->sync([1,2]);
 
     return $user->roles;
+
+    */
+
+    /*
+    return   Permission::create([
+        'name' => 'List product',
+        'slug' => 'product.index',  //nombre del modelo y luego nombre del metodo que va a estar asociado en el 
+        'description' => 'A user can list permissions',
+        
+    ]);
+    */
+
+    $role = Role::find(2);
+
+    //$role->permissions()->sync([1]);
+    $role->permissions()->sync([1,5]);
+    return $role->permissions;
     
     
 });

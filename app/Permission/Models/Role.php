@@ -17,4 +17,10 @@ class Role extends Model
         return $this->belongsToMany('App\User')->withTimesTamps(); 
     }
 
+    public function permissions()
+    {
+        //Relacion N a N Roles y Permission
+        return $this->belongsToMany('App\Permission\Models\Permission')->withTimesTamps();
+    }
+
 }
