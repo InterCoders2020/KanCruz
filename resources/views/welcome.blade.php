@@ -85,14 +85,14 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="{{Route('contact.index')}}">Contact</a>
+                    <a href="{{Route('room.index')}}">Room</a>
+                    <a href="{{Route('booking.index')}}">Booking</a>
+                    <a href="{{Route('service.index')}}">Service</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/laravel/laravel">Contact Us</a>
                 </div>
             </div>
         </div>
