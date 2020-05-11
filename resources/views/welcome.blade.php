@@ -85,9 +85,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://127.0.0.1:8000/booking">Booking</a>
-                    <a href="https://laracasts.com">Rooms</a>
-                    <a href="https://laravel-news.com">Contact</a>
+                    <a href="http://localhost:5000/service">Service</a>
+                    <a href="http://localhost:5000/booking">Booking</a>
+                    <a href="http://localhost:5000/room">Room</a>
+                    <a href="http://localhost:5000/contact">Contact</a>
+                    <a href="https://github.com/InterCoders2020/KanCruz">GitHub</a>
+                </div>
             </div>
         </div>
     </body>
