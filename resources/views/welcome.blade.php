@@ -85,10 +85,13 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://localhost:5000/service">Service</a>
-                    <a href="http://localhost:5000/booking">Booking</a>
-                    <a href="http://localhost:5000/room">Room</a>
-                    <a href="http://localhost:5000/contact">Contact</a>
+                    <a href="{{Route('contact.index')}}">Contact</a>
+                    <a href="{{Route('room.index')}}">Rooms</a>
+                    <a href="{{Route('booking.index')}}">Booking</a>
+                    <a href="{{Route('service.index')}}">Service</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/InterCoders2020/KanCruz">GitHub</a>
                 </div>
             </div>
