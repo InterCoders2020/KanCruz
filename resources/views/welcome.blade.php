@@ -86,14 +86,13 @@
 
                 <div class="links">
                     <a href="{{Route('contact.index')}}">Contact</a>
-                    <a href="{{Route('room.index')}}">Room</a>
+                    <a href="{{Route('room.index')}}">Rooms</a>
                     <a href="{{Route('booking.index')}}">Booking</a>
                     <a href="{{Route('service.index')}}">Service</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">Contact Us</a>
-
+                    <a href="https://github.com/InterCoders2020/KanCruz">GitHub</a>
                 </div>
             </div>
         </div>

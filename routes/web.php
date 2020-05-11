@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('service', 'ServiceController');
-Route::resource('room', 'RoomController');
-Route::resource('booking', 'BookingController');
+Route::resource('service', 'ServiceController')->middleware('auth');
+Route::resource('room', 'RoomController')->middleware('auth');
+Route::resource('booking', 'BookingController')->middleware('auth');
 Route::resource('contact', 'ContactController');
