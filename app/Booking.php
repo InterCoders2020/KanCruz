@@ -63,6 +63,24 @@ class Booking extends Model
           $this->attributes['check_out'] = date('Y/m/d H:i:s');
       }
 
+      public function rooms()
+    {
+        return $this->hasMany(Room::class);
+    }
 
+    public function services()
+    {
+        return $this->hasMany(Service::class);
+    }
+
+    public function contacts()
+    {
+        return $this->hasMany(Contact::class);
+    }
+
+    public function rate()
+    {
+        return $this->hasOne(Rate::class);
+    }
 
 }
