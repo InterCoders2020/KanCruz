@@ -67,3 +67,4 @@ class Rate extends Model
         return $this->hasOne(Service::class);
     }
 }
+    
