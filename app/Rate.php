@@ -6,42 +6,49 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rate extends Model
 {
-    public $guestMax;
+    public $guest;
     public $roomPrice;
     public $breakfast;
-    public $pet;
+    public $petsprice;
+    public $pets;
     public $days;
 
-    public function priceForNigth($roomPrice , $days)
+    public function priceForNigth( $roomPrice , $days)
     {
-        $result = $roomPrice * $days;
-        return $result;
-        if($result );
-
+        return $roomPrice * $days;
     }
 
-    public function priceWithBreakfast($breakfast , $guest)
+    public function priceWithBreakfast( $breakfast , $guest)
     {
         return $breakfast * $guest;
     }
 
-    public function priceWithPet($petsprice , $pets)
+    public function priceWithPet( $petsprice , $pets)
     {
         return $petsprice * $pets;
     }
 
-    public function maxPersonsPerRoom($guest , $guestMax)
+    public function maxPersonsPerRoom( $guest , $guestMax)
     {
         return $guest >= $guestMax;
     }
 
-    // public function priceTotalInstance()
+    public function priceTotalInstance( $roomPrice , $days , $guest , $breakfast , $petsprice , $pet)
     {
-        $resultTotal = $resultfornigth + $resultForBraefsts +$resultForPet;
-    }
+        $resultNigth = $roomPrice * $days;
+        return $resultNigth;
+        if($breakfast = true){
+            $resultBreakfast = $resultNigth + ($breakfast * $guest);
+            return $resultBreakfast;
+            if ($pets = True){
+                $resultPet = $resultNigth + ($petsprice * $pet);
+                return $resultPet;
+                if ($breakfast = true and $pet = true){
+                    $result = $resultNigth + ($breakfast * $guest) + ($petsprice * $pets);
+                    return $result;
+                }
+            }
+        }
 
-    public function getPriceTotalInstance()
-    {
-        return $resultTotal;
     }
 }

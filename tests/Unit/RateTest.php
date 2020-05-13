@@ -20,9 +20,9 @@ class RateTest extends TestCase
         $days = 4;
         $roomPrice = 85;
         $rate = new Rate();
-        $result = $rate->priceForNigth($roomPrice , $days);
-        $result = $roomPrice * $days;
-        $this->assertEquals(340, $result);
+        $resultNigth = $rate->priceForNigth($roomPrice , $days);
+        $resultNigth = $roomPrice * $days;
+        $this->assertEquals(340, $resultNigth);
     }
 
 
@@ -31,9 +31,9 @@ class RateTest extends TestCase
         $guest = 2;
         $breakfast = 15;
         $rate = New Rate();
-        $result = $rate->priceWithBreakfast($guest , $breakfast);
-        $result = $guest * $breakfast;
-        $this->assertEquals(30, $result);
+        $resultBreakfast = $rate->priceWithBreakfast($guest , $breakfast);
+        $resultBreakfast = $guest * $breakfast;
+        $this->assertEquals(30, $resultBreakfast);
     }
 
     public function test_price_with_pet()
@@ -41,9 +41,9 @@ class RateTest extends TestCase
         $pet = 2;
         $petsprice = 5;
         $rate = New Rate();
-        $result = $rate->priceWithPet($petsprice , $pet);
-        $result = $petsprice * $pet;
-        $this->assertEquals(10, $result);
+        $resultPet = $rate->priceWithPet($petsprice , $pet);
+        $resultPet = $petsprice * $pet;
+        $this->assertEquals(10, $resultPet);
     }
 
 
@@ -52,8 +52,9 @@ class RateTest extends TestCase
         $guestMax = 4;
         $guest = 3;
         $rate = New Rate();
-        $result = $rate->maxPersonsPerRoom($guest , $guestMax);
+        $resultMaxPeople = $rate->maxPersonsPerRoom($guest , $guestMax);
         $this->assertGreaterThanOrEqual($guest, $guestMax);
+
     }
 
     public function test_price_total_instance()
@@ -64,11 +65,14 @@ class RateTest extends TestCase
         $breakfast = 15;
         $petsprice = 5;
         $days = 2;
+        $resultNigth = 340;
+        $resultBreakfast = null;
+        $resultPet = 5;
+
         $rate = new Rate();
-
-        $resultTotal = $rate->prcieTotalInste()
-
-
+        $resultTotal = $rate->priceTotalInstance($roomPrice , $days , $guest , $breakfast , $petsprice , $pet);
+        $resultTotal = $resultNigth + $resultBreakfast  + $resultPet;
+        $this->assertEquals(345, $resultTotal);
     }
 }
 
