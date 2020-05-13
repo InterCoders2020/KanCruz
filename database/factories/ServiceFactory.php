@@ -3,12 +3,12 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use App\Room;
+use App\Service;
 
-$factory->define(Room::class, function (Faker $faker) {
+$factory->define(Service::class, function (Faker $faker) {
     return [
-        'name' => $faker->country,
+        'name' => $faker->city,
         'cost' => $faker->randomDigitNot(0),
-        'status' => $faker->numberBetween(0,2),
+        'description' => $faker->text(20),
     ];
 });
