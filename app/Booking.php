@@ -28,6 +28,16 @@ class Booking extends Model
        return "No";
     }
 
+    public function getCheckInAttribute()
+    {
+        return date('d/m/Y', strtotime($this->attributes['check_in']));
+    }
+
+    public function getCheckOutAttribute()
+    {
+        return date('d/m/Y', strtotime($this->attributes['check_out']));
+    }
+
     public function setFirstNameAttribute($value)
     {
         $this->attributes['first_name'] = ucwords(strtolower($value));
@@ -45,13 +55,6 @@ class Booking extends Model
         $this->attributes['email'] = strtolower($value);
     }
 
-    public function getCheckInAttribute() {
-        return date('d/m/Y', strtotime($this->attributes['check_in']));
-      }
-
-    public function getCheckOutAttribute() {
-        return date('d/m/Y', strtotime($this->attributes['check_out']));
-      }
 
     public function setCheckInAttribute($value)
       {
