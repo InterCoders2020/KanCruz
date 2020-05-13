@@ -51,4 +51,19 @@ class Rate extends Model
         }
 
     }
+
+    public function booking()
+    {
+        return $this->hasOne(Booking::class);
+    }
+
+    public function rooms()
+    {
+        return $this->hasMany(Room::class);
+    }
+
+    public function service()
+    {
+        return $this->hasOne(Service::class);
+    }
 }
