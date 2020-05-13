@@ -1,6 +1,6 @@
 # About InterCoders
 ### Team Members:
 - Johanna Sanchez
-- Kevin Hidalgo
 - Jose Ortega
+- Kevin Hidalgo
 - Sofía Carballo
