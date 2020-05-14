@@ -24,9 +24,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('/role', 'RoleController')->names('role');
+
 //Esto es para crear las Pruebas sin controladores inicialmente
-Route::get('/test', function () 
+/*Route::get('/test', function () 
 {
+    */
     //Creamos una pruebita
     //return 'Hola!';
     //vamos a http://127.0.0.1:8000/test y deberia retornar Hola! 
@@ -78,12 +81,13 @@ Route::get('/test', function ()
         
     ]);
     */
-
+    /*
     $role = Role::find(2);
 
     //$role->permissions()->sync([1]);
     $role->permissions()->sync([1,5]);
     return $role->permissions;
-    
-    
+    */
+/*    
 });
+*/
