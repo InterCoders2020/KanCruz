@@ -26,9 +26,9 @@
                 <input type="text" name="cost" value="{{$room->cost}}"/>
                 <label>Status</label>
                 <select type="text" name="status" value="{{$room->status}}">
-                    <option value="available">Available</option>
-                    <option value="occupied">Occupied</option>
-                    <option value="others">Others</option>
+                    <option value="0">Available</option>
+                    <option value="1">Occupied</option>
+                    <option value="2">Others</option>
                 </select>
             </div>
         </div>
