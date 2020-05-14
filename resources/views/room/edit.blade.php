@@ -28,7 +28,7 @@
                 <select type="text" name="status" value="{{$room->status}}">
                     <option value="0">Available</option>
                     <option value="1">Occupied</option>
-                    <option value="2">Others</option>
+                    <option value="2">Disabled</option>
                 </select>
             </div>
         </div>
