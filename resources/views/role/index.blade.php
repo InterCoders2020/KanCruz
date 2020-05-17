@@ -15,6 +15,7 @@
                     </a>
                     <br><br>
 
+                    @include('custom.message')
 
                     <table class="table table-hover">
                         <thead>
@@ -28,8 +29,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          
-                            
+                                                     
                             @foreach ($roles as $role)
                             <tr>
                                 <th scope="row">{{ $role->id}}</th>
@@ -39,27 +39,17 @@
                                 <td>{{ $role['full-access']}}</td>                            
                                 <td> <a class="btn btn-info" href="{{ route('role.show',$role->id)}}">Show</a> </td>  
                                 <td> <a class="btn btn-success" href="{{ route('role.edit',$role->id)}}">Edit</a> </td>  
-                                <td> 
-                                  <form action="{{ route('role.destroy',$role->id)}}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="btn btn-danger">Delete</button>
-                                  </form>
-                                  
-
-                                </td>  
+                                <td> <a class="btn btn-danger" href="{{ route('role.edit',$role->id)}}">Delete</a> </td>  
                             </tr>      
                             @endforeach
                             
-                   
+                       
                         </tbody>
                       </table>
 
-
                       {{ $roles->links() }}
 
-
-                </div>
+               </div>
             </div>
         </div>
     </div>
