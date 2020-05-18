@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\User;
 use App\Permission\Models\Role;
 use App\Permission\Models\Permission;
+=======
+>>>>>>> dbb6f5772a286f89fff26bb04df3508edac226d0
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +22,7 @@ use App\Permission\Models\Permission;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Auth::routes();
 
@@ -91,3 +95,5 @@ Route::resource('/role', 'RoleController')->names('role');
 /*    
 });
 */
+=======
+>>>>>>> dbb6f5772a286f89fff26bb04df3508edac226d0
