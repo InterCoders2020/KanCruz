@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Booking extends Model
 {
-    protected $fillable = ['first_name', 'last_name','email', 'phone','check_in','check_out','guests','rooms','pet', 'breakfast', 'comment'];
+    protected $fillable = ['first_name', 'last_name','email', 'phone','check_in','check_out','guests','room_id','pet', 'breakfast', 'comment'];
 
     public function getPetAttribute($value)
     {
@@ -55,7 +55,6 @@ class Booking extends Model
         $this->attributes['email'] = strtolower($value);
     }
 
-
     public function setCheckInAttribute($value)
       {
           $this->attributes['check_in'] = date('Y/m/d H:i:s');
@@ -66,9 +65,9 @@ class Booking extends Model
           $this->attributes['check_out'] = date('Y/m/d H:i:s');
       }
 
-      public function rooms()
+      public function room()
     {
-        return $this->hasMany(Room::class);
+        return $this->hasOne(Room::class);
     }
 
     public function services()
@@ -86,4 +85,8 @@ class Booking extends Model
         return $this->hasOne(Rate::class);
     }
 
+    public function availability()
+    {
+        return $this->hasOne(Availability::class);
+    }
 }
