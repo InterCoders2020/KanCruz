@@ -52,6 +52,7 @@ class RoleController extends Controller
 
         $role = Role::create($request->all());
         
+        //Validacion 
         if ($request->get('permission')) {
             //return $request->all();
             $role->permissions()->sync($request->get('permission'));

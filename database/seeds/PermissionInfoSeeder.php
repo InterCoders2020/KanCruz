@@ -137,7 +137,7 @@ class PermissionInfoSeeder extends Seeder
         //End Permission User
 
         //table permission_role
-        $roladmin->permissions()->sync( $permission_all);
+        //$roladmin->permissions()->sync( $permission_all);
          
     }
 }
