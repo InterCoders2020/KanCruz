@@ -71,7 +71,8 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="breakfast" class="form-label">Breakfast</label>
-                                            <select name="breakfast" id="breakfast" class="form-control" value="{{$booking->breakfast}}">
+                                            <select name="breakfast" id="breakfast" class="form-control" value="{{$booking->breakfast}}" placeholder="{{old('breakfast') == 'breakfast' ? 'selected' : '' }}">
+                                                {{-- <option {{old('breakfast') == 'breakfast' ? 'selected' : '' }}>{{$booking->breakfast}}</option> --}}
                                                 <option disabled selected> {{$booking->breakfast}} </option>
                                                 <option value="1">Yes</option>
                                                 <option value="0">No</option>
