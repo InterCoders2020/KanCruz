@@ -100,9 +100,23 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Role $role)
     {
         //
+        $request->validate([
+            'name'          => 'required|max:50|unique:roles,name,'.$role->id,
+            'slug'          => 'required|max:50|unique:roles,slug,'.$role->id,
+            'full-access'   => 'required|in:yes,no'
+        ]);
+
+        $role->update($request->all());
+        
+        if ($request->get('permission')) {
+            //return $request->all();
+            $role->permissions()->sync($request->get('permission'));
+        }
+        return redirect()->route('role.index')
+            ->with('status_success','Role updated successfully'); 
     }
 
     /**
