@@ -24,7 +24,7 @@
                             id="name" 
                             placeholder="Name"
                             name="name"
-                            value="{{ old('name')}}"
+                            value="{{old('name')}}"
                             >
                           </div>
                           <div class="form-group">                            
@@ -33,15 +33,13 @@
                             id="slug" 
                             placeholder="Slug"
                             name="slug"
-                            value="{{ old('slug')}}"
+                            value="{{old('slug')}}"
                             >
                           </div>
 
                           <div class="form-group">
                             
-                            <textarea class="form-control" placeholder="Description" name="description" id="description" rows="3"> 
-                             {{ old('description')}}
-                            </textarea>
+                            <textarea class="form-control" placeholder="Description" name="description" id="description" rows="3">{{old('description')}}</textarea>
                           </div>
 
                           <hr>
@@ -103,7 +101,7 @@
 
                           @endforeach
                           <hr>
-                          <input class="btn btn-primary" type="submit" value="Guardar">
+                          <input class="btn btn-primary" type="submit" value="Save">
 
 
                      </div>
