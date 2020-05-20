@@ -13,10 +13,9 @@ class CreateBookingsTable extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('check_in');
-            $table->string('check_out');
+            $table->date('check_in');
+            $table->date('check_out');
             $table->integer('guests');
-            $table->integer('rooms');
             $table->boolean('pet');
             $table->boolean('breakfast');
             $table->string('email');
