@@ -10,12 +10,13 @@ class Rate extends Model
     public $roomPrice;
     public $breakfast;
     public $petsprice;
-    public $pets;
+    public $pet;
     public $days;
+    public $rooms;
 
-    public function priceForNigth( $roomPrice , $days)
+    public function priceForNigth( $roomPrice , $days, $rooms)
     {
-        return $roomPrice * $days;
+        return $rooms * $roomPrice * $days;
     }
 
     public function priceWithBreakfast( $breakfast , $guest)
@@ -23,9 +24,9 @@ class Rate extends Model
         return $breakfast * $guest;
     }
 
-    public function priceWithPet( $petsprice , $pets)
+    public function priceWithPet( $petsprice , $pet)
     {
-        return $petsprice * $pets;
+        return $petsprice * $pet;
     }
 
     public function maxPersonsPerRoom( $guest , $guestMax)
@@ -33,38 +34,33 @@ class Rate extends Model
         return $guest >= $guestMax;
     }
 
-    public function priceTotalInstance( $roomPrice , $days , $guest , $breakfast , $petsprice , $pet)
+    public function priceForNumberOfRooms($rooms , $roomPrice)
     {
-        $resultNigth = $roomPrice * $days;
-        return $resultNigth;
-        if($breakfast = true){
-            $resultBreakfast = $resultNigth + ($breakfast * $guest);
-            return $resultBreakfast;
-            if ($pets = True){
-                $resultPet = $resultNigth + ($petsprice * $pet);
-                return $resultPet;
-                if ($breakfast = true and $pet = true){
-                    $result = $resultNigth + ($breakfast * $guest) + ($petsprice * $pets);
-                    return $result;
-                }
-            }
+        return $rooms * $roomPrice;
+    }
+
+    public function priceTotalInstance( $roomPrice, $petsprice)
+    {
+        $nigths = 3; //TODO:Subtituir por metodo de booking (getNitgh)
+        $result = $this->booking->rooms * $roomPrice * $nigths;
+
+        if($breakfast = true)
+        {
+            $result = $result + ($breakfast * $this->booking->guest * $nigths);
+
+        }
+        if ($pet = true)
+        {
+            $result = $result + ($petsprice * $pet * $nigths);
         }
 
+        $this->priceTotal = $result;
     }
 
     public function booking()
     {
-        return $this->hasOne(Booking::class);
+        return $this->belongsTo(Booking::class,);
     }
 
-    public function rooms()
-    {
-        return $this->hasMany(Room::class);
-    }
-
-    public function service()
-    {
-        return $this->hasOne(Service::class);
-    }
 }
-    
+
