@@ -8,15 +8,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
- 
+
 	<div class="container-fluid" style="margin-top: 100px">
- 
+
 		@yield('content')
 	</div>
 	<style type="text/css">
 	.table {
 		border-top: 2px solid #ccc;
- 
+
 	}
 </style>
 </body>

@@ -1,0 +1,110 @@
+@extends('layout')
+@section('content')
+
+
+  <div class="block-30 block-30-sm item" style="background-image: url('images/home_4.jpg');" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-10">
+          <span class="subheading-sm">Booking</span>
+          <h2 class="heading">Make your reservation</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row block-9">
+        <div class="class-body">
+          <div class="col-md-6 col-md-pull-7">
+  <div class="booking-form">
+    <form>
+      <div class="form-group">
+                          <label for="first_name" class="form-label">Name</label>
+                          <input type="text" name='first_name' class="form-control" placeholder="Enter first name" required/>
+                      </div>
+                      <div class="form-group">
+        <label for="last_name" class="form-label">Lastname</label>
+        <input type="text" name='last_name' class="form-control" placeholder="Enter last name" required>
+                      </div>
+                      <div class="form-group">
+        <label for="last_name">E-mail</label>
+        <input type="text" name='email' class="form-control" placeholder="Enter e-mail" required>
+                      </div>
+                      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" name='phone' class="form-control" placeholder="Enter phone number" required>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="check_in"class="form-label">Check-In</label>
+            <input name="check_in" class="form-control" type="date" required>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="check_out"class="form-label">Check-Out</label>
+            <input name="check_out" class="form-control" type="date" required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+                          <div class="col-sm-6">
+          <div class="form-group">
+                                  <label for="guests" class="form-label">Guests</label>
+                                  <input type="number" id="guests" name="guests" min="1" max="4" class="form-control" required>
+                              </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+                                  <label for="rooms" class="form-label">Rooms</label>
+                                  <select name="rooms" id="rooms" class="form-control" required>
+                                      <option disabled selected value> --Select an option-- </option>
+                                  <option value="1">Estança de Sant Cristòfol</option>
+                                      <option value="2">Estança del Rocacentella</option>
+                                      <option value="3">Estança del Puigraciós</option>
+            </select>
+                              </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="pet" id="pet" class="form-label">Pet</label>
+            <select name="pet" id="pet" class="form-control" required>
+                                      <option disabled selected value> --Select an option-- </option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          </div>
+                          </div>
+                          <div class="col-sm-6">
+          <div class="form-group">
+            <label for="breakfast" class="form-label">Breakfast</label>
+            <select name="breakfast" id="breakfast" class="form-control" required>
+                                      <option disabled selected value> --Select an option-- </option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+          </div>
+                          </div>
+                          <input type="hidden" name="user_id" value="{{auth::user()->id}}"/>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <div class="form-btn">
+                                  <input type="submit" value="Book" class="btn btn-primary">
+                              </div>
+                          </div>
+                      </div>
+    </form>
+  </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+@endsection
