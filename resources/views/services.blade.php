@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-<div class="block-30 block-30-sm item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+<div class="block-30 block-30-sm item" style="background-image: url('images/home_4.jpg');" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-10">
@@ -17,7 +17,7 @@
 
   	<div class="row site-section">
   		<div class="col-lg-7 mb-5">
-  			<img src="images/img_7.jpg" alt="Image placeholder" class="img-fluid img-shadow">
+  			<img src="images/animals_3.jpg" alt="Image placeholder" class="img-fluid img-shadow">
   		</div>
   		<div class="col-lg-5 pl-md-5">
 
@@ -52,7 +52,7 @@
 
   	<div class="row site-section pt-0">
   		<div class="col-lg-7 mb-5 order-lg-2">
-  			<img src="images/img_2.jpg" alt="Image placeholder" class="img-fluid img-shadow">
+  			<img src="images/hero.jpg" alt="Image placeholder" class="img-fluid img-shadow">
   		</div>
   		<div class="col-lg-5 pr-md-5 order-lg-1">
 
@@ -164,19 +164,16 @@
     	<div class="container">
 	    	<div class="row">
 	    		<div class="col-md-6 col-lg-4 mb-5">
-	    			<img src="images/img_4.jpg" alt="Image placeholder" class="img-fluid img-shadow mb-4">
-	    			<h4>Even the all-powerful Pointing</h4>
-	    			<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+	    			<img src="images/vegs.jpg" alt="Image placeholder" class="img-fluid img-shadow mb-4" width="310px">
+	    			<h4>Garden</h4>
 	    		</div>
 	    		<div class="col-md-6 col-lg-4 mb-5">
-	    			<img src="images/img_2.jpg" alt="Image placeholder" class="img-fluid img-shadow mb-4">
-	    			<h4>Blind texts it is an almost</h4>
-	    			<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+	    			<img src="images/farm.jpg" alt="Image placeholder" class="img-fluid img-shadow mb-4">
+	    			<h4>Farm</h4>
 	    		</div>
 	    		<div class="col-md-6 col-lg-4 mb-5">
-	    			<img src="images/img_7.jpg" alt="Image placeholder" class="img-fluid img-shadow mb-4">
-	    			<h4>Pointing has no control about</h4>
-	    			<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+	    			<img src="images/home_2.jpg" alt="Image placeholder" class="img-fluid img-shadow mb-4">
+	    			<h4>Ecologic Cuisine</h4>
 	    		</div>
 	    	</div>`
     	</div>

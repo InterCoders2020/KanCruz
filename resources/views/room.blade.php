@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-<div class="block-30 block-30-sm item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+<div class="block-30 block-30-sm item" style="background-image: url('images/home_4.jpg');" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-10">
@@ -17,7 +17,7 @@
         <div class="row mb-5">
           <div class="col-md-12 mb-5">
             <div class="block-3 d-md-flex">
-              <div class="image"><img src="images/cristofol_2.jpg" alt="Image placeholder"></div>
+              <div class="image" style="background-image: url('images/cristofol_2.jpg')"></div>
               <div class="text">
                 <h2 class="heading">Estança de Sant Cristòfol Room</h2>
                 <div class="price"><sup>€</sup><span class="number">85</span><sub>/per night</sub></div>
@@ -34,7 +34,7 @@
 
           <div class="col-md-12 mb-5">
             <div class="block-3 d-md-flex">
-              <div class="image order-2"><img src="images/rocacentella_1.jpg" alt="Image placeholder"></div>
+              <div class="image order-2"  style="background-image: url('images/rocacentella_1.jpg')"></div>
               <div class="text order-1">
                 <h2 class="heading">Estança del Rocacentella</h2>
                 <div class="price"><sup>€</sup><span class="number">85</span><sub>/per night</sub></div>
@@ -51,10 +51,10 @@
 
         <div class="col-md-12">
             <div class="block-3 d-md-flex">
-                <div class="image" style="background-image: url('images/img_3.jpg'); "></div>
+                <div class="image" style="background-image: url('images/puig_1.jpg'); "></div>
                     <div class="text">
-                        <h2 class="heading">Presidential Room</h2>
-                        <div class="price"><sup>€</sup><span class="number">450</span><sub>/per night</sub></div>
+                        <h2 class="heading">Estança del Puigraciós</h2>
+                        <div class="price"><sup>€</sup><span class="number">85</span><sub>/per night</sub></div>
                             <ul class="specs mb-5">
                             <li><strong>Guests:</strong> 1</li>
                             <li><strong>Categories:</strong> Quadruple</li>
