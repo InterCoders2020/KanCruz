@@ -68,10 +68,10 @@
                         <div class="icon"><span class="ion-ios-arrow"></span></div>
                         <select name="" id="" class="form-control">
                           <option selected disabled value=""></option>
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
                          </select>
                         </select>
                       </div>
@@ -82,9 +82,9 @@
                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                           <select name="" id="" class="form-control">
                             <option selected disabled value=""></option>
-                            <option value="">Estança 1</option>
-                            <option value="">Estança 2</option>
-                            <option value="">Estança 3</option>
+                            <option value="1">Estança 1</option>
+                            <option value="2">Estança 2</option>
+                            <option value="3">Estança 3</option>
                            </select>
                       </div>
                     </div>
@@ -183,7 +183,7 @@
                   <div class="item">
                     <div class="block-34">
                       <div class="image">
-                        <a href="#"><img src="images/cristofol_2.jpg" alt="Image placeholder"></a>
+                        <a href="/ourRooms"><img src="images/cristofol_2.jpg" alt="Image placeholder"></a>
                       </div>
                       <div class="text">
                         <h2 class="heading">Estança de Sant Cristòfol</h2>
@@ -202,7 +202,7 @@
                   <div class="item">
                     <div class="block-34">
                       <div class="image">
-                        <a href="#"><img src="images/rocacentella_1.jpg" alt="Image placeholder"></a>
+                        <a href="/ourRooms"><img src="images/rocacentella_1.jpg" alt="Image placeholder"></a>
                       </div>
                       <div class="text">
                         <h2 class="heading">Estança del Rocacentella</h2>
@@ -221,7 +221,7 @@
                   <div class="item">
                     <div class="block-34">
                       <div class="image">
-                        <a href="#"><img src="images/puig_1.jpg" alt="Image placeholder"></a>
+                        <a href="/ourRooms"><img src="images/puig_1.jpg" alt="Image placeholder"></a>
                       </div>
                       <div class="text">
                         <h2 class="heading">Estança del Puigraciós</h2>
@@ -270,7 +270,7 @@
                     <div class="item">
                       <div class="block-34">
                         <div class="image">
-                          <a href="#"><img src="images/breakfast_1.jpg" alt="Image placeholder"></a>
+                          <a href="/ourRates"><img src="images/breakfast_1.jpg" alt="Image placeholder"></a>
                         </div>
                         <div class="text">
                           <h2 class="heading">Spanish Tortilla</h2>
@@ -282,7 +282,7 @@
                     <div class="item">
                       <div class="block-34">
                         <div class="image">
-                          <a href="#"><img src="images/breakfast_2.jpg" alt="Image placeholder"></a>
+                          <a href="/ourRates"><img src="images/breakfast_2.jpg" alt="Image placeholder"></a>
                         </div>
                         <div class="text">
                           <h2 class="heading">Fresh Vegetables</h2>
@@ -294,7 +294,7 @@
                     <div class="item">
                       <div class="block-34">
                         <div class="image">
-                          <a href="#"><img src="images/breakfast_3.jpg" alt="Image placeholder"></a>
+                          <a href="/ourRates"><img src="images/breakfast_3.jpg" alt="Image placeholder"></a>
                         </div>
                         <div class="text">
                           <h2 class="heading">Grilled Chicken</h2>
@@ -306,7 +306,7 @@
                     <div class="item">
                       <div class="block-34">
                         <div class="image">
-                          <a href="#"><img src="images/breakfast_4.jpg" alt="Image placeholder"></a>
+                          <a href="/ourRates"><img src="images/breakfast_4.jpg" alt="Image placeholder"></a>
                         </div>
                         <div class="text">
                           <h2 class="heading">Catalan Pasta</h2>
@@ -318,7 +318,7 @@
                     <div class="item">
                       <div class="block-34">
                         <div class="image">
-                          <a href="#"><img src="images/breakfast_5.jpg" alt="Image placeholder"></a>
+                          <a href="/ourRates"><img src="images/breakfast_5.jpg" alt="Image placeholder"></a>
                         </div>
                         <div class="text">
                           <h2 class="heading">Crema Catalana</h2>
@@ -326,7 +326,6 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
