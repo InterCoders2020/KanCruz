@@ -65,6 +65,8 @@ class Booking extends Model
       {
           $this->attributes['check_out'] = date('Y/m/d H:i:s');
       }
+    
+
 
       public function rooms()
     {
