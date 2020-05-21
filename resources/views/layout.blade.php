@@ -23,7 +23,9 @@
 
 
   <body>
-    </nav>
+    @include('nav')
+    @yield('content')
+    @include('footer')
   </body>
 
 </html>

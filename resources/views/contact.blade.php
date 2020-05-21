@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Bright Hotel - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-
-        @include('nav')
-
-
+ @extends('layout')
+ @section('content')
 
   <div class="block-30 block-30-sm item" style="background-image: url('images/contact.jpg');" data-stellar-background-ratio="0.5">
     <div class="container">
@@ -88,7 +64,7 @@
               </div>
               <div class="text">
                 <blockquote>
-                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
+                  <p>&rdquo; One of my best holidays ever! We were welcomed by Maria who was very friendly and hospitable. The Masia is stylish, warm and our room set on its own terrace. Breakfast was made by Maria and it was dealicious! &ldquo;</p>
                 </blockquote>
               </div>
             </div>
@@ -106,7 +82,7 @@
               </div>
               <div class="text">
                 <blockquote>
-                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
+                  <p>&rdquo; We stayed here three nights as part of a walking holiday. The views from the terraces are magical. The food was superb. The chef there seems to know how to combine the flavours of local products so that they continually surprise and delight &ldquo;</p>
                 </blockquote>
               </div>
             </div>
@@ -124,7 +100,7 @@
               </div>
               <div class="text">
                 <blockquote>
-                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
+                  <p>&rdquo;We stayed here for Valentine's Day. It's very simple but lovely and the rooms very clean and beds comfortable. We enjoyed the lovely terrace and rocking chairs to sit on as we looked over the peaceful valley. It was an unforgettable weekend! &ldquo;</p>
                 </blockquote>
               </div>
             </div>
@@ -133,54 +109,4 @@
         </div>
       </div>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-6 col-lg-4">
-              <div class="block-23">
-                <h3 class="heading-section">Contact Info</h3>
-                  <ul>
-                    <li><a href='#'><span class="icon icon-map-marker"></span><span class="text">Masia KanCruz, 08590, Figaró-Montmany, Catalunya, Spain</span></a></li>
-                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">+34 607304498</span></a></li>
-                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">masiacanplans.montseny@gmail.com</span></a></li>
-                  </ul>
-                </div>
-            </div>
-
-
-          </div>
-          <div class="row pt-5">
-            <div class="col-md-12 text-left">
-              <p>
-                InterCoders &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-
-  </body>
-</html>
+@endsection

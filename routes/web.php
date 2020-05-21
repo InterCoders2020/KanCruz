@@ -21,6 +21,10 @@ Route::get('contactUs', function () {
     return view('contact');
 });
 
+Route::get('OurRooms', function () {
+    return view('room');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
