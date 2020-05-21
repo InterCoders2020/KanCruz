@@ -20,9 +20,9 @@
 
         <div class="col-md-12 mb-4">
             <div class="block-3 d-md-flex">
-              <a class="image" href="blog-single.html" style="background-image: url('images/rates_3.jpg'); "></a>
+              <a class="image" style="background-image: url('images/rates_3.jpg'); "></a>
               <div class="text">
-                <h2 class="heading"><a href="#">Breakfast</a></h2>
+                <h2 class="heading">Breakfast</h2>
                 <p>€12 per person per night</p>
                 <p class="meta">Breakfast service must be for all guests in the reservation<span class="sep"></span></p>
               </div>
@@ -31,9 +31,9 @@
 
         <div class="col-md-12 mb-4">
             <div class="block-3 d-md-flex">
-              <a class="image" href="blog-single.html" style="background-image: url('images/rates_2.jpg'); "></a>
+              <a class="image"  style="background-image: url('images/rates_2.jpg'); "></a>
               <div class="text">
-                <h2 class="heading"><a href="#">Pets</a></h2>
+                <h2 class="heading">Pets</h2>
                 <p>€5 per pet per night</p>
                 <p class="meta">Only one pet is allowed per reservation<span class="sep"></span></p>
               </div>
@@ -42,9 +42,9 @@
 
         <div class="col-md-12 mb-4">
           <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('images/rates_1.jpg'); "></a>
+            <a class="image"  style="background-image: url('images/rates_1.jpg'); "></a>
             <div class="text">
-              <h2 class="heading"><a href="#">Rate per night</a></h2>
+              <h2 class="heading">Rate per night</h2>
               <p>€85 per room per night</p>
               <p class="meta">Maximum 4 guests per room<span class="sep"></span></p>
             </div>
