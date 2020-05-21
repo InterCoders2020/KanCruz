@@ -55,15 +55,15 @@ class Booking extends Model
         $this->attributes['email'] = strtolower($value);
     }
 
-    public function setCheckInAttribute($value)
+  /*   public function setCheckInAttribute($value)
       {
           $this->attributes['check_in'] = date('Y/m/d H:i:s');
       }
-
-    public function setCheckOutAttribute($value)
+ */
+  /*   public function setCheckOutAttribute($value)
       {
           $this->attributes['check_out'] = date('Y/m/d H:i:s');
-      }
+      } */
 
       public function room()
     {
