@@ -13,7 +13,7 @@ $factory->define(Booking::class, function (Faker $faker) {
         'check_in' => $faker->dateTimeBetween('-15 days', '-6 days'),
         'check_out' => $faker->dateTimeBetween('-5 days', 'now'),
         'guests' => $faker->randomDigitNot(0),
-        'rooms' => $faker->numberBetween(1,3),
+        'room_id' => $faker->numberBetween(1,3),
         'pet' => $faker->boolean,
         'breakfast' => $faker->boolean,
         'email' => $faker->safeEmail,
