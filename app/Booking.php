@@ -59,12 +59,11 @@ class Booking extends Model
       {
           $this->attributes['check_in'] = date('Y/m/d H:i:s');
       }
- */
-  /*   public function setCheckOutAttribute($value)
+        public function setCheckOutAttribute($value)
       {
           $this->attributes['check_out'] = date('Y/m/d H:i:s');
-      } */
-
+      }
+       */
       public function room()
     {
         return $this->hasOne(Room::class);
