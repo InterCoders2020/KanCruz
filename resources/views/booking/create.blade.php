@@ -46,7 +46,7 @@
                                     <div class="col-sm-6">
 										<div class="form-group">
                                             <label for="guests" class="form-label">Guests</label>
-                                            <input type="number" id="guests" name="guests" min="1" max="32" class="form-control" required>
+                                            <input type="number" id="guests" name="guests" min="1" max="4" class="form-control" required>
                                         </div>
 									</div>
 									<div class="col-sm-6">
