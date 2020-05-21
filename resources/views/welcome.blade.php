@@ -341,7 +341,7 @@
           <div class="row align-items-center">
             <div class="col-md-12">
               <h2 class="heading">Quality accommodation that exceeds the expectations</h2>
-              <p><a href="#" class="btn py-4 px-5 btn-primary">Learn More</a></p>
+              <p><a href="/About" class="btn py-4 px-5 btn-primary">Learn More</a></p>
             </div>
           </div>
         </div>

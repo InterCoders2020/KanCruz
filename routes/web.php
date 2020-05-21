@@ -37,6 +37,10 @@ Route::get('bookNow', function () {
     return view('booking');
 });
 
+Route::get('ourRates', function () {
+    return view('rates');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
