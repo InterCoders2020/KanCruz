@@ -12,12 +12,12 @@
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="/OurRooms" class="nav-link">Rooms</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Rates</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="/ourRooms" class="nav-link">Rooms</a></li>
+          <li class="nav-item"><a href="/Services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="/OurRates" class="nav-link">Rates</a></li>
+          <li class="nav-item"><a href="/About" class="nav-link">About Us</a></li>
           <li class="nav-item"><a href="/contactUs" class="nav-link">Contact</a></li>
-          <li class="nav-item"><a href="booking.html" class="nav-link">Booking</a></li>
+          <li class="nav-item"><a href="/bookNow" class="nav-link">Booking</a></li>
         </ul>
       </div>
     </div>

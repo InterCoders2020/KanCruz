@@ -21,8 +21,12 @@ Route::get('contactUs', function () {
     return view('contact');
 });
 
-Route::get('OurRooms', function () {
+Route::get('ourRooms', function () {
     return view('room');
+});
+
+Route::get('Services', function () {
+    return view('services');
 });
 
 Auth::routes();
