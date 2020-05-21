@@ -28,7 +28,7 @@ class Booking extends Model
        return "No";
     }
 
-    public function getCheckInAttribute()
+   /*  public function getCheckInAttribute()
     {
         return date('d/m/Y', strtotime($this->attributes['check_in']));
     }
@@ -36,7 +36,7 @@ class Booking extends Model
     public function getCheckOutAttribute()
     {
         return date('d/m/Y', strtotime($this->attributes['check_out']));
-    }
+    } */
 
     public function setFirstNameAttribute($value)
     {
@@ -55,15 +55,6 @@ class Booking extends Model
         $this->attributes['email'] = strtolower($value);
     }
 
-  /*   public function setCheckInAttribute($value)
-      {
-          $this->attributes['check_in'] = date('Y/m/d H:i:s');
-      }
-        public function setCheckOutAttribute($value)
-      {
-          $this->attributes['check_out'] = date('Y/m/d H:i:s');
-      }
-       */
       public function room()
     {
         return $this->hasOne(Room::class);
