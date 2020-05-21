@@ -53,8 +53,13 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="rooms" class="form-label">Rooms</label>
-                                            <input type="number" id="rooms" name="rooms" min="1" max="8" class="form-control" value="{{$booking->rooms}}">
+                                            <label for="room_id" class="form-label">Rooms</label>
+                                            <select type="text" name="room_id" id="room_id" class="form-control" value="{{$booking->room_id}}">
+                                                <option disabled selected> {{$booking->room_id}} </option>
+                                                <option value="1">Estança de Sant Cristòfol</option>
+                                                <option value="2">Estança del Rocacentella</option>
+                                                <option value="3">Estança del Puigraciós</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">

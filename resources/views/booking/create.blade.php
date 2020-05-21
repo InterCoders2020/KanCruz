@@ -51,10 +51,10 @@
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group">
-                                            <label for="rooms" class="form-label">Rooms</label>
-                                            <select name="rooms" id="rooms" class="form-control" required>
+                                            <label for="room_id" class="form-label">Rooms</label>
+                                            <select name="room_id" id="room_id" class="form-control" required>
                                                 <option disabled selected value> --Select an option-- </option>
-                                            <option value="1">Estança de Sant Cristòfol</option>
+                                                <option value="1">Estança de Sant Cristòfol</option>
                                                 <option value="2">Estança del Rocacentella</option>
                                                 <option value="3">Estança del Puigraciós</option>
 											</select>

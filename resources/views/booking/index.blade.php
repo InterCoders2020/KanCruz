@@ -31,7 +31,7 @@
                             <td>{{$booking->check_in}}</td>
                             <td>{{$booking->check_out}}</td>
                             <td>{{$booking->guests}}</td>
-                            <td>{{$booking->rooms}}</td>
+                            <td>{{$booking->room_id}}</td>
                             <td>€price</td>
 
                             <td class="btn-group" role="group" aria-label="Basic example">

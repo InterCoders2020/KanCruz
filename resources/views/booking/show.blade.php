@@ -70,7 +70,7 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <h5 class="form-label">Rooms</h5>
-                                                    <p class="form-control"> {{$booking->rooms}}</p>
+                                                    <p class="form-control"> {{$booking->room_id}}</p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
