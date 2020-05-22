@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container">
       <div class="row mb-5">
-        
+
 
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
@@ -16,7 +16,7 @@
               <img src="images/rates_2.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="#">Pet-friendly Space</a></h3>
+              <h3 class="heading"><a href="/Services">Pet-friendly Space</a></h3>
             </div>
           </div>
         </div>
