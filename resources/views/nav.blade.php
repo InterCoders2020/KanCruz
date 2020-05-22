@@ -11,7 +11,7 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="/ourRooms" class="nav-link">Rooms</a></li>
           <li class="nav-item"><a href="/Services" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="/ourRates" class="nav-link">Rates</a></li>
