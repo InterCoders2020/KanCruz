@@ -1,6 +1,26 @@
 <footer class="footer">
     <div class="container">
       <div class="row mb-5">
+        
+
+        <div class="col-md-6 col-lg-4">
+          <h3 class="heading-section">About Us</h3>
+          <p class="mb-5">We are in the Montseny Natural Park, a UNESCO Biosphere Reserve</p>
+          <p><a href="/role" class="btn btn-primary px-4">Access Admin </a></p>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h3 class="heading-section">Special Service</h3>
+          <div class="block-21 d-flex mb-4">
+            <figure class="mr-3">
+              <img src="images/rates_2.jpg" alt="" class="img-fluid">
+            </figure>
+            <div class="text">
+              <h3 class="heading"><a href="#">Pet-friendly Space</a></h3>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-6 col-lg-4">
           <div class="block-23">
             <h3 class="heading-section">Contact Info</h3>
