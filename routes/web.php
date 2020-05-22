@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\User;
+use App\Permission\Models\Role;
+use App\Permission\Models\Permission;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 Route::get('contactUs', function () {
     return view('contact');
@@ -54,3 +58,6 @@ Route::resource('availability', 'AvailabilityController')->middleware('auth');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/role', 'RoleController')->names('role');
+
+
