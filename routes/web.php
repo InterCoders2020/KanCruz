@@ -20,74 +20,44 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('contactUs', function () {
+    return view('contact');
+});
+
+Route::get('ourRooms', function () {
+    return view('room');
+});
+
+Route::get('Services', function () {
+    return view('services');
+});
+
+Route::get('About', function () {
+    return view('about');
+});
+
+Route::get('bookNow', function () {
+    return view('booking');
+});
+
+Route::get('ourRates', function () {
+    return view('rates');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('service', 'ServiceController')->middleware('auth');
+Route::resource('room', 'RoomController')->middleware('auth');
+Route::resource('booking', 'BookingController')->middleware('auth');
+Route::resource('contact', 'ContactController')->middleware('auth');
+Route::resource('availability', 'AvailabilityController')->middleware('auth');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/role', 'RoleController')->names('role');
 
-//Esto es para crear las Pruebas sin controladores inicialmente
-/*Route::get('/test', function () 
-{
-    */
-    //Creamos una pruebita
-    //return 'Hola!';
-    //vamos a http://127.0.0.1:8000/test y deberia retornar Hola! 
 
-    //Ahora si creamos 3 Roles
-    /*
-    return  Role::create([
-        'name' => 'Admin',
-        'slug' => 'admin',
-        'description' => 'Administrator',
-        'full-access' => 'yes'
-    ]);
-    */
-    
-    /*
-    return   Role::create([
-        'name' => 'Guest',
-        'slug' => 'guest',
-        'description' => 'guest',
-        'full-access' => 'no'
-    ]);
-    */
-   
-    /*
-    return   Role::create([
-        'name' => 'test',
-        'slug' => 'test',
-        'description' => 'test',
-        'full-access' => 'no'
-    ]);
-    */
-    /*
-    $user = User::find(1);
-
-    //$user->roles()->attach([1,3]);
-    //$user->roles()->detach([3]); 
-    //sync es algo nuevo de Laravel 7 que soluciona de usar attach y detach
-    $user->roles()->sync([1,2]);
-
-    return $user->roles;
-
-    */
-
-    /*
-    return   Permission::create([
-        'name' => 'List product',
-        'slug' => 'product.index',  //nombre del modelo y luego nombre del metodo que va a estar asociado en el 
-        'description' => 'A user can list permissions',
-        
-    ]);
-    */
-    /*
-    $role = Role::find(2);
-
-    //$role->permissions()->sync([1]);
-    $role->permissions()->sync([1,5]);
-    return $role->permissions;
-    */
-/*    
-});
-*/
