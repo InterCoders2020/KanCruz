@@ -6,7 +6,7 @@
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
           <p class="mb-5">We are in the Montseny Natural Park, a UNESCO Biosphere Reserve</p>
-          <p><a href="/role" class="btn btn-primary px-4">Access Admin </a></p>
+          <p><a href="/home" class="btn btn-primary px-4">Access Admin </a></p>
         </div>
 
         <div class="col-md-6 col-lg-4">
