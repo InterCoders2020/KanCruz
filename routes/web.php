@@ -5,6 +5,8 @@ use App\User;
 use App\Permission\Models\Role;
 use App\Permission\Models\Permission;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,7 +26,28 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//11junio
+Route::get('/test', function () {
+
+    //$user = User::find(4); //3 id user
+    //$user->roles()->sync([3]); //2 id del rol 
+    //return $user->roles;
+    //return $user
+
+    $user = User::find(4);
+    //return $user->havePermission('role.create'); //tenemos que crear el metodo havePermission en User.php
+    //Gate::authorize('haveaccess', true); 
+    //Gate::authorize('haveaccess', false);
+    //Gate::authorize('haveaccess','role.index');
+    Gate::authorize('haveaccess','role.show');
+    return $user;
+
+});
+//ENd 11 junion 
+
 Route::resource('/role', 'RoleController')->names('role');
+
+
 
 //Esto es para crear las Pruebas sin controladores inicialmente
 /*Route::get('/test', function () 

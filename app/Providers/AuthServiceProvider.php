@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
+use App\User;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -25,6 +26,16 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        //por lo que entiendo Gate similar a las rutas de get
+
+        Gate::define('haveaccess', function (User $user, $perm){
+            //dd($user);
+            //dd($user->id); //muestra el id de user logeado
+            //dd($perm);
+            //return true; 
+            //return $perm;
+            return $user->havePermission($perm); //havePermission es una funcion de trait return true o false
+        });
         //
     }
 }
