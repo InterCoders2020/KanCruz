@@ -29,10 +29,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 //11junio
 Route::get('/test', function () {
 
+    //---------Section manual asignar user a rol ----
+
     //$user = User::find(4); //3 id user
     //$user->roles()->sync([3]); //2 id del rol 
     //return $user->roles;
     //return $user
+
+    //---------End Section manual asignar user a rol ----
 
     $user = User::find(4);
     //return $user->havePermission('role.create'); //tenemos que crear el metodo havePermission en User.php
@@ -43,9 +47,12 @@ Route::get('/test', function () {
     return $user;
 
 });
-//ENd 11 junion 
+//End 11 junion 
 
 Route::resource('/role', 'RoleController')->names('role');
+
+//usamos el except y esto hace que no se genere las rutas de create o store para user
+Route::resource('/user', 'UserController', ['except'=>['create','store']])->names('user');
 
 
 
