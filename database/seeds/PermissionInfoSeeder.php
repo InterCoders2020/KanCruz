@@ -123,10 +123,34 @@ class PermissionInfoSeeder extends Seeder
             'slug' => 'user.destroy',
             'description' => 'A user can destroy user',
         ]);
+
+
+        //new
+
+
+        $permission_all[] = $permission->id;
+        
+        $permission = Permission::create([
+            'name' => 'Show own user',
+            'slug' => 'userown.show',
+            'description' => 'A user can see own user',
+        ]);        
         
         $permission_all[] = $permission->id;
+        
+        $permission = Permission::create([
+            'name' => 'Edit own user',
+            'slug' => 'userown.edit',
+            'description' => 'A user can edit own user',
+        ]);
+        
+        
 
-        /*$permission = Permission::create([
+
+
+        /*$permission_all[] = $permission->id;
+
+        $permission = Permission::create([
             'name' => 'Create user',
             'slug' => 'user.create',
             'description' => 'A user can create user',
